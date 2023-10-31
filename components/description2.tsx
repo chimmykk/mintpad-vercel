@@ -1,4 +1,4 @@
-import ShadowedMarquee from "@/app/test/page";
+import ShadowedMarquee from "@/components/shadowMarquee";
 import Image from "next/image";
 
 export default function Description2() {
