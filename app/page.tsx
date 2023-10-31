@@ -1,7 +1,7 @@
 "use client"
 
-import Feature from '@/components/feature'
-import Hero from '@/components/hero'
+import Feature from '@/components/sections/feature'
+import Hero from '@/components/sections/hero'
 
 
 export default function Home() {

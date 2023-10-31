@@ -6,7 +6,7 @@ export default function ShadowedMarquee() {
 
     const names = [
         'Multi-chain',
-        'mint on your own website',
+        'Mint on your own website',
         'Whitelist',
         'Custom mint website',
         'NFT generator',
@@ -18,7 +18,7 @@ export default function ShadowedMarquee() {
 
 
   return (
-        <div className=' flex flex-col gap-2 relative'>
+        <div className=' flex flex-col text-white gap-2 relative '>
             <div className='shadow-left z-20'></div>
 
             <Marquee className='' direction="right" speed={40} delay={0}>

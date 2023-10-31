@@ -1,9 +1,9 @@
-import ShadowedMarquee from "@/components/shadowMarquee";
+import ShadowedMarquee from "@/components/sections/shadowMarquee";
 import Image from "next/image";
 
 export default function Description2() {
     return(
-        <main className="h-screen flex flex-col gap-32 bg-bgDark px-4 md:h-screen xl:px-64 pt-16">
+        <main className=" flex flex-col gap-32 bg-bgDark px-4 xl:px-64 py-16">
             <div className="flex justify-between gap-4 ">
                 <h1 className="text-[20px]  h-fit">
                     Join other creators and teams who’ve used Mintpad to launch and manage their NFT projects.
