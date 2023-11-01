@@ -23,7 +23,7 @@ export default function Capabilities() {
 }
 
 
-function Card({ title, description }) {
+function Card({ title, description }: {title: string, description: string}) {
     const cardBackgroundStyle = {
       background: 'linear-gradient(to right, #1C2634, #05131D)',
     };
