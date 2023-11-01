@@ -27,7 +27,16 @@ export default function BlockchainInfo() {
   );
 }
 
-function Card({ title, description, buttonLabel, buttonVariant, buttonSize }) {
+interface CardProps {
+  title: string;
+  description: string | JSX.Element ;
+  buttonLabel: string;
+  buttonVariant: 'default' | 'destructive' | 'outline' | 'secondary' | 'ghost' | 'link';
+  buttonSize: 'default' | 'sm' | 'lg' | 'icon' | null | undefined;
+}
+
+
+function Card({ title, description, buttonLabel, buttonVariant, buttonSize }: CardProps) {
   return (
     <div className="md:w-1/2 px-4">
       <h1 className=" text-[28px] md:text-[50px] font-semibold">{title}</h1>
