@@ -1,4 +1,5 @@
 import BlockchainInfo from "./blockchainInfo";
+import Capabilities from "./capabilities";
 import Description from "./description";
 import Description2 from "./description2";
 import HowItWorks from "./howItWorks";
@@ -12,6 +13,7 @@ export default function Feature(){
             <Description2 />
             <HowItWorks />
             <BlockchainInfo />
+            <Capabilities />
         </main>
     )
 }
