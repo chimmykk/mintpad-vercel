@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Hero(){
     return(
-        <div className=' text-white px-4 lg:px-32 py-12 h-[calc(100vh-80px)] fixed top-24 z-10 overflow-hidden'>
+        <div className=' text-white px-4 lg:px-32 py-12 h-[calc(100vh-80px)] fixed top-24 z-0 overflow-hidden'>
         <h1 className=' font-graphikSemibold text-[36px] sm:text-[50px] md:text-[60px] px-4 md:px-16 xl:px-32 text-center mt-16 leading-tight'>
           The easiest way to launch your NFT collection
         </h1>

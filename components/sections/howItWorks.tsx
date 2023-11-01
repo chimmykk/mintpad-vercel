@@ -1,4 +1,5 @@
 import Image from "next/image"
+import {motion} from "framer-motion"
 
 export default function HowItWorks() {
     // Define an array of steps
@@ -23,22 +24,52 @@ export default function HowItWorks() {
 
     return (
         <main className="bg-bgDark px-4 md:px-6 xl:px-28 2xl:px-64 py-4 ">
-            <div className="text-white">
+            <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  transition={{ duration: 0.5}}
+                  variants={{
+                      visible: { opacity: 1, y: 0 },
+                      hidden: { opacity: 0, y: 75 }
+                  }}
+                  viewport={{ once: true }}
+                className="text-white"
+             >
                 <h1 className="uppercase text-xl text-Blue">How it works</h1>
                 <h1 className="text-[50px] font-semibold">Launching a collection <br /> on Mintpad</h1>
                 <p className="hidden md:block text-gray text-lg py-8 font-extralight">From the ability to design your own mint website, to the ease of embedding a mint <br /> button on any existing website, Mintpad provides a convenient and user-friendly <br /> experience for anyone looking to launch their own NFT collection.</p>
                 <p className="md:hidden text-gray text-lg py-6 font-extralight">From the ability to design your own mint website, to the ease of embedding a mint button on any existing website, Mintpad provides a convenient and user-friendly experience for anyone looking to launch their own NFT collection.</p>
-            </div>
+            </motion.div>
             <div>
                 <div className="flex justify-between gap-3 items-center py-36">
-                    <div className="lg:w-1/2">
+                    <motion.div 
+                        className="lg:w-1/2"
+                          initial="hidden"
+                  whileInView="visible"
+                  transition={{ duration: 0.5}}
+                  variants={{
+                      visible: { opacity: 1, y: 0 },
+                      hidden: { opacity: 0, y: 75 }
+                  }}
+                  viewport={{ once: true }}
+                    >
                         {steps.map((step, index) => (
                             <Step key={index} title={step.title} description={step.description} />
                         ))}
-                    </div>
-                    <div className="overflow-hidden hidden lg:block rounded-3xl">
+                    </motion.div>
+                    <motion.div 
+                        className="overflow-hidden hidden lg:block rounded-3xl"
+                          initial="hidden"
+                  whileInView="visible"
+                  transition={{ duration: 0.5}}
+                  variants={{
+                      visible: { opacity: 1, y: 0 },
+                      hidden: { opacity: 0, y: 75 }
+                  }}
+                  viewport={{ once: true }}
+                    >
                         <Image src="/images/mintNfts.webp" width="400" height="400" alt="pic" className="rounded-3xl h-[662px] w-[547px]" />
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </main>

@@ -5,7 +5,9 @@ import HowItWorks from "./howItWorks";
 
 export default function Feature(){
     return(
-        <main className="bg-bgDark flex flex-col overflow-hidden rounded-t-[56px] absolute top-[900px] left-0 right-0 z-20">
+        <main
+         className="bg-bgDark flex flex-col overflow-hidden rounded-t-[56px] feature-main z-50"
+         >
             <Description />
             <Description2 />
             <HowItWorks />

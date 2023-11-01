@@ -20,4 +20,10 @@
     height: 100%;
     background: linear-gradient(to left, #04121B, transparent);
   }
+
+  .feature-main {
+    transform: translateY(900px); /* Adjust the value as needed */
+    transition: transform 0.3s ease; /* Add a transition for smoother movement */
+  }
+  
   
