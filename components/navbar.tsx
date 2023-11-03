@@ -91,15 +91,17 @@ export default function Navbar() {
                             className=" w-[135px] h-[23px]"
                         /> 
                     </Link>
-                <div onClick={() => setShowMenu(true)} >
-                    <AlignRight />
+                <div >
+                    {showMenu ? 
+                    <button onClick={() => setShowMenu(!showMenu)}><X /></button>
+                    :
+                    <AlignRight onClick={() => setShowMenu(true)} />
+
+                }
                 </div>
                
-                <div className={`${showMenu ? "  left-0" : " -left-[100%]"} text-lg fixed top-0  min-h-screen w-full`}>
-                    <div onClick={() => setShowMenu(false)} className="absolute  overflow-y-hidden z-50 w-full min-h-screen bg-black opacity-50">
-                    </div>
-                    <div  className={`${showMenu ? "right-0 " : "-right-[100%]"} flex flex-col items-center text-white bg-bgDark py-20 transition-all duration-500 min-h-screen max-h-screen ease-in-out px-10 w-full gap-8 fixed top-0 z-50 overflow-y-auto overflow-x-hidden `}>
-                        <button onClick={() => setShowMenu(false)}  className="absolute top-5 right-5 "><X /></button>
+                <div className={` text-lg fixed top-14  min-h-screen w-full `}>
+                    <div  className={`${showMenu ? "right-0 " : "-right-[100%]"} flex flex-col items-center text-white bg-bgDark py-20 transition-all duration-500 min-h-screen max-h-screen ease-in-out px-10 w-full gap-8 fixed top-14 z-50 overflow-y-auto overflow-x-hidden `}>
                         <Link className="" onClick={() => setShowMenu(false)} href={'/'}>Home</Link>
                         <Link className="" onClick={() => setShowMenu(false)} href={'/'}>Features</Link>
                         <Link className="" onClick={() => setShowMenu(false)} href={'/'}>Pricing</Link>
