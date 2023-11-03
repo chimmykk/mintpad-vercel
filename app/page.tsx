@@ -1,4 +1,3 @@
-"use client"
 
 import Feature from '@/components/sections/feature'
 import Hero from '@/components/sections/hero'
