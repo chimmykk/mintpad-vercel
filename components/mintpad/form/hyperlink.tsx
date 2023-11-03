@@ -5,9 +5,10 @@ import { ReactNode } from 'react';
 interface DynamicLinkProps {
     href: string;
     children: ReactNode;
+    className?: string; // Make className optional
   }
 
-export default function DynamicLink({ href, children }: DynamicLinkProps) {
+export default function HyperLink({ href, children, className }: DynamicLinkProps) {
 
   return (
     <Link href={href}>
