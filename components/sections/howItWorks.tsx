@@ -68,7 +68,7 @@ export default function HowItWorks() {
                   }}
                   viewport={{ once: true }}
                     >
-                        <Image src="/images/mintNfts.webp" width="400" height="400" alt="pic" className="rounded-3xl h-[662px] w-[547px]" />
+                        <Image src="/images/mintNfts.webp" blurDataURL="data:image/jpeg..." placeholder="blur" priority={true} width="400" height="400" alt="pic" className="rounded-3xl h-[662px] w-[547px]" />
                     </motion.div>
                 </div>
             </div>

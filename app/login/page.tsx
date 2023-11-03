@@ -1,5 +1,9 @@
+import Layout from "@/components/mintpad/authCard"
+
 export default function Hello() {
     return(
-        <div>hello</div>
+        <Layout>
+            Hello s
+        </Layout>
     )
 }

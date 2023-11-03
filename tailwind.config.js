@@ -15,6 +15,26 @@ module.exports = {
         white: '#fff',
         black: '#000',
         gray: '#81859F',
+        primary: {
+          100: '#f8f9ff', // new
+          200: '#E0E7FF', // new
+          300: '#cce2fc',
+          400: '#eef2fd',
+          500: '#151E29',
+          600: '#0077FF',
+          700: '#0265dd',
+      },
+      mintpad: {
+          100: '#FAFAFA', // new
+          200: '#ECEDEF', // new
+          300: '#656f77',
+          400: '#8C98A9', // new
+          500: '#05121b',
+          600: '#000000',
+          700: '#2E384D', // new
+          800: '#151E29', // new
+          900: '#21272E', // new
+      }
     },
     textColor: {
         gray: '#81859F',
@@ -22,7 +42,27 @@ module.exports = {
         Blue: '#0077FF',
         white: '#fff',
         black: '#000',
-        BlueHover: '#0055CC'
+        BlueHover: '#0055CC',
+        primary: {
+          100: '#f8f9ff', // new
+          200: '#E0E7FF', // new
+          300: '#cce2fc',
+          400: '#eef2fd',
+          500: '#151E29',
+          600: '#0077FF',
+          700: '#0265dd',
+      },
+      mintpad: {
+          100: '#FAFAFA', // new
+          200: '#ECEDEF', // new
+          300: '#656f77',
+          400: '#8C98A9', // new
+          500: '#05121b',
+          600: '#000000',
+          700: '#2E384D', // new
+          800: '#151E29', // new
+          900: '#21272E', // new
+      }
     },
     container: {
       center: true,
@@ -48,6 +88,9 @@ module.exports = {
           to: { height: 0 },
         },
       },
+      colors: {
+        
+    },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",

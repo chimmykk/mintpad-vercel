@@ -33,7 +33,7 @@ function Card({ title, description, imageSrc }: { title: string; description: st
   return (
     <div className="flex flex-col justify-center items-center rounded-lg overflow-hidden">
       <div>
-        <Image src={imageSrc} width={1000} height={1000} alt="pic" />
+        <Image src={imageSrc} blurDataURL="data:image/jpeg..." placeholder="blur" priority={true}  width={1000} height={1000} alt="pic"   />
       </div>
       <div style={cardBackgroundStyle} className="text-white w-full bg-gray py-6 px-6">
         <h1 className="text-[28px] font-semibold py-2">{title}</h1>
