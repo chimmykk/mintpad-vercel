@@ -75,7 +75,7 @@ export default function Navbar() {
                             <Link href={'/'} className={buttonVariants({ variant: "default", size: "lg" })}>Sign up</Link>
                         </li>
                         <li>
-                            <Link href="/support" className=" hover:text-white transition-all duration-200">Login</Link>
+                            <Link href="/login" className=" hover:text-white transition-all duration-200">Login</Link>
                         </li>
                     </ul>
                 </div>

@@ -12,7 +12,7 @@ export default function Hero(){
           Mintpad makes it easy to start an NFT collection. All you need is your artwork and a cryptocurrency wallet. Our platform takes care of the rest, handling everything else you need.
         </p>
         <div className='text-center w-full py-10'>
-          <Link href={'/'} className={buttonVariants({ variant: "destructive", size: "lg" })}>Create Collection</Link>
+          <Link href={'/login'} className={buttonVariants({ variant: "destructive", size: "lg" })}>Create Collection</Link>
         </div>
         <div className='w-full flex justify-center items-center mt-20'>
           <Image src={'/images/appleStudio.webp'} width={1000} height={1000} alt='apple' style={{ boxShadow: '0 0 300px 10px #003366' }} />
