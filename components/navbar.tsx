@@ -45,7 +45,7 @@ export default function Navbar() {
     const pathname = usePathname()
 
     return(
-        <nav style={{ backdropFilter: 'blur(6.7px)' }} className={` ${scrolled ? 'bg-opacity-60' : ''} ${pathname === '/login' ? 'hidden' : ''} bg-bgDark px-4 md:px-8 lg:px-20 xl:px-32 py-4 fixed  z-50 top-0 left-0 right-0  text-gray`}>
+        <nav style={{ backdropFilter: 'blur(6.7px)' }} className={` ${scrolled ? 'bg-opacity-60' : ''} ${pathname === '/login' ? 'hidden' : ''} bg-bgDark px-4 md:px-6 xl:px-28 2xl:px-64 py-4 fixed  z-50 top-0 left-0 right-0  text-gray`}>
             {/* larger screens */}
             <div className="hidden lg:flex justify-between items-center">
                 <Link href="/">
