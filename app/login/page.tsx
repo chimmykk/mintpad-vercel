@@ -68,7 +68,7 @@ const Login = () => {
 
 
           <div className="my-5 flex text-xs">
-            <HyperLink href={'/password/request'}>
+            <HyperLink href={'https://app.mintpad.co/forgot-password'}>
               Forgot your password?
             </HyperLink>
           </div>

@@ -72,10 +72,10 @@ export default function Navbar() {
                             <Link href="/support" className=" hover:text-white transition-all duration-200">Support</Link>
                         </li>
                         <li>
-                            <Link href={'/'} className={buttonVariants({ variant: "default", size: "lg" })}>Sign up</Link>
+                            <Link href={'https://app.mintpad.co/register'} className={buttonVariants({ variant: "default", size: "lg" })}>Sign up</Link>
                         </li>
                         <li>
-                            <Link href="/login" className=" hover:text-white transition-all duration-200">Login</Link>
+                            <Link href="https://app.mintpad.co/login" className=" hover:text-white transition-all duration-200">Login</Link>
                         </li>
                     </ul>
                 </div>
