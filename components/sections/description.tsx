@@ -12,7 +12,7 @@ export default function Description(){
                 Mintpad takes care of everything for you. Smart contracts, artwork generation, custom mint website or embed on your own, decentralization and more!
             </h1>
             <div className='text-center w-full py-10 relative z-20 mb-48 md:mb-0'>
-                <Link href={'/'} className={buttonVariants({ variant: "destructive", size: "lg" })}>Create Collection</Link>
+                <Link href={'https://app.mintpad.co/login'} className={buttonVariants({ variant: "destructive", size: "lg" })}>Create Collection</Link>
             </div>
         </main>
     )
