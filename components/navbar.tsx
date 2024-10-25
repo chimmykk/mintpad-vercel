@@ -69,7 +69,7 @@ export default function Navbar() {
                             <Link href="/blog" className=" hover:text-white transition-all duration-200">Blog</Link>
                         </li>
                         <li>
-                            <Link href="/support" className=" hover:text-white transition-all duration-200">Support</Link>
+                            <Link href="https://discord.gg/sza2Kxbx" className=" hover:text-white transition-all duration-200">Support</Link>
                         </li>
                         <li>
                             <Link href={'https://app.mintpad.co/register'} className={buttonVariants({ variant: "default", size: "lg" })}>Sign up</Link>
